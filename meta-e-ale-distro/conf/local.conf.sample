@@ -73,11 +73,11 @@ SSTATE_DIR ?= "${HOME}/Projects/SSTATE"
 # these defaults.
 #
 DISTRO ?= "e-ale"
-# As an example of a subclass there is a "bleeding" edge policy configuration
+# As an example of a subclass there is a "tiny" policy configuration
 # where many versions are set to the absolute latest code from the upstream 
 # source control systems. This is just mentioned here as an example, its not
 # useful to most new users.
-# DISTRO ?= "poky-bleeding"
+# DISTRO ?= "e-ale-tiny"
 
 #
 # Package Management configuration
@@ -92,6 +92,9 @@ DISTRO ?= "e-ale"
 # E.g.: PACKAGE_CLASSES ?= "package_rpm package_deb package_ipk"
 # We default to rpm:
 PACKAGE_CLASSES ?= "package_deb"
+
+# For the 'e-ale-tiny' distro, only 'package_ipk' should be used
+# PACKAGE_CLASSES ?= "package_ipk"
 
 #
 # SDK target architecture
