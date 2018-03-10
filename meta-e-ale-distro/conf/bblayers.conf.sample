@@ -1,11 +1,12 @@
 # LAYER_CONF_VERSION is increased each time build/conf/bblayers.conf
 # changes incompatibly
-LCONF_VERSION = "7"
+LCONF_VERSION = "2"
 
 BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
   ##OEROOT##/meta \
+  ##OEROOT##/../yocto-e-ale/meta-e-ale-bsp \
   ##OEROOT##/../yocto-e-ale/meta-e-ale-distro \
   "
